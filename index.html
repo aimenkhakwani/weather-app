@@ -4,20 +4,31 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Alaram Clock</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="well">Alarm Clock</h1>
+      <h1 class="well">Weather App</h1>
       <div class="row">
-        <div class="col-sm-4">
-          <h2>The Current time is: <span id="time"></span></h2>
+        <div class="col-sm-6">
+          <form id="weather-form">
+            <label for="city">Enter A City:</label>
+            <input class="form-control" id="city" placeholder="city" type="text" required>
+            <label for="city">Choose a unit:</label>
+            <select id="unit" class="form-control">
+              <option value="Metric">Celsius</option>
+              <option value="Imperial">Fahrenheit</option>
+              <option value="">Kelvin</option>
+            </select>
+            <button type="submit" class="btn btn-info">Display Weather</button>
+          </form>
         </div>
-        <div class="col-sm-4">
-
-        </div>
-        <div class="col-sm-4">
-
+        <div class="col-sm-6">
+          <h3 id="output-humidity"></h3>
+          <h3 id="output-temp"></h3>
+          <!-- <p><a id="celsius">Show in Celsius</a></p>
+          <p><a id="fahrenheit">Show in Fahrenheit</a></p> -->
         </div>
       </div>
     </div>
