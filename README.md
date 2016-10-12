@@ -13,7 +13,7 @@ This app allows users to input a city, and uses an API to display the current hu
 * Clone the repository
 * Using the command line, navigate to the project's root directory
 * Take '.env' out of the .gitignore file
-* Add an api key in the .env file
+* Add (exports.apiKey = "";) to the .env file without parens, and add an api key in the double quotes
 * Install node dependencies by running $ npm install
 * Install bower dependencies by running $ bower install
 * Build the files by running $ gulp build
